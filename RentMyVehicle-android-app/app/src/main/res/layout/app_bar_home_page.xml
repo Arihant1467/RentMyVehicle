@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ayush.rentalvehicles.Home_page">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home_page" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/user_background">
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:textSize="25dp"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Register Vehicle"/>
+
+        <Button
+            android:id="@+id/rentout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:textSize="25dp"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Start/Stop Renting"/>
+
+        <Button
+            android:id="@+id/rentin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:fontFamily="casual"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Rent Vehicle"/>
+
+        <Button
+            android:id="@+id/history_btn"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:textSize="25dp"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:text="History"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>

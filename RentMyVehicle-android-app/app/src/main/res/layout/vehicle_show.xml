@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp">
+
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="205dp"
+        android:background="#7CB3D5"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:backgroundTint="@color/colorAccent">
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            >
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:gravity="left"
+                android:textStyle="bold|italic"
+                android:fontFamily="casual"
+                android:text="Price(Rs/day)"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="3dp"/>
+            <TextView
+                android:id="@+id/price_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold|italic"
+                android:fontFamily="casual"
+                android:text="600"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="7dp"
+            >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:gravity="left"
+                android:textStyle="bold|italic"
+                android:fontFamily="casual"
+                android:text="Vehicle Name"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="3dp"/>
+            <TextView
+                android:id="@+id/vehicle_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textStyle="bold|italic"
+                android:fontFamily="casual"
+                android:text="Swift"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="gone"/>
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>

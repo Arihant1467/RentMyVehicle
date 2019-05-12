@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ayush.rentalvehicles.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="180dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/username_field"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/login_image"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:singleLine="true"
+                android:fontFamily="casual"
+                android:hint="E-mail ID"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/password_field"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/password"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:singleLine="true"
+                android:fontFamily="casual"
+                android:hint="Password"/>
+
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:backgroundTint="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="Login"/>
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="sans-serif-condensed"
+                android:backgroundTint="#000000"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Not a member? Click here"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
